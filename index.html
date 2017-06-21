@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Story - By Andres</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="dawningFont"
+          src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844"
+        ></a-asset-item>
+      </a-assets>
+      <a-sphere
+        position="-80 80.5 -180"
+        rotation="0 45 0"
+        scale="33 33 33"
+        side="double"
+        src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Fvenus_surface.jpg?1496306774699"
+        event-set__5="_event: mousedown; scale: 33 33 33"
+        event-set__6="_event: mouseup; scale: 34 34 34"
+        event-set__7="_event: mouseenter; scale: 34 34 34"
+        event-set__8="_event: mouseleave; scale: 33 33 33"
+        event-set__makevisible3="_event: click; _target: #camera; position: -70 73 -180"
+        event-set__makevisible4="_event: click; _target: #rotation; dur: 290000">
+        <a-animation id="rotation" easing="linear" attribute="rotation" dur="30000" to="0 0 360" repeat="indefinite"></a-animation>
+      </a-sphere>
+
+      <a-box scale="43 .5 43" rotation="0 0 0" position="-80 70 -180" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Fit.jpg?1496653701793"></a-box>
+      <a-image position="-99 78 -189" rotation="0 30 0" scale="10 10 10" shader="flat" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2FDTU%20logo.png?1496655840067"></a-image>
+      <a-sphere position="-60 73 -180" scale="1 1 1" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Fstars.jpg?1496658037260"
+                event-set__b1="_event: mouseenter; scale: 1.3 1.3 1.3"
+                event-set__b2="_event: mouseleave; scale: 1 1 1"
+                event-set__b3="_event: click; _target: #camera; position: 0 1.6 0"
+                event-set__b4="_event: click; _target: #rotation; dur: 30000">
+      </a-sphere>
+      <a-text value="Go Back" position="-66 73 -182.5" scale="2 2 2" rotation="0 -70 0"></a-text>
+      <a-box scale=".05 .05 3.2" position="-63 72.6 -182.5" color="grey" > </a-box>
+      <a-box scale=".05 .05 .5" position="-60 72.55 -181.2" color="grey" rotation="-30 0 0"> </a-box>
+      
+      <a-box scale=".2 .2 6" position="-38 33.5 -50" rotation="10 -40 0" color="gray"></a-box>
+      <a-box scale=".2 .2 2" position="-33.7 31.7 -50" rotation="-40 -40 0" color="gray"></a-box>
+      <a-text value="Education" scale="10 10 20" position="-55 38 -50" rotation="0 30 0" color="white"></a-text>
+      
+      <a-ring position="0 20 0" rotation="90 0 0" radius="10.25" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Ffree_space_galaxy_texture_by_lyshastra-d77gh18.jpg?1496318509355">
+        <a-animation easing="linear" attribute="rotation" dur="50000" to="360 0 360" repeat="indefinite"></a-animation>
+      </a-ring>
+      <a-sphere position="0 20 0" rotation="0 45 0" radius=".4" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Fsaturnmap.jpg?1496395637053">
+      <a-animation easing="linear" attribute="rotation" dur="30000" to="0 0 360" repeat="indefinite"></a-animation>
+      </a-sphere>
+      <a-sphere position="1 34 -105" 
+                rotation="50 45 70" 
+                scale="30 30 30" 
+                side="double"
+                src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2F2k_moon.jpg?1496306808408"
+                event-set__5="_event: mousedown; scale: 30 30 30"
+                event-set__9="_event: mouseup; scale: 31 31 31"
+                event-set__10="_event: mouseenter; scale: 31 31 31"
+                event-set__11="_event: mouseleave; scale: 30 30 30"
+                event-set__m1="_event: click; _target: #camera; position: 1 13 -95"
+                event-set__m2="_event: click; _target: #moonr; dur: 0">
+        <a-animation id="moonr" easing="linear" attribute="rotation" dur="15000" to="0 0 360" repeat="indefinite"></a-animation>
+      </a-sphere>
+      
+      <a-sphere position="11 11 -99" scale="1 1 1" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Fstars.jpg?1496658037260"
+                event-set__b1="_event: mouseenter; scale: 1.3 1.3 1.3"
+                event-set__b2="_event: mouseleave; scale: 1 1 1"
+                event-set__b3="_event: click; _target: #camera; position: 0 1.6 0"
+                event-set__b4="_event: click; _target: #moonr; dur: 15000">
+      </a-sphere>
+      
+      <a-text value="Go Back" position="11 11 -103" scale="3 3 3" rotation="0 -70 0" color="black"></a-text>
+      <a-box scale=".05 .05 3.2" position="13 10.3 -103" color="grey" > </a-box>
+      <a-box scale=".05 .05 .5" position="16 9.75 -102.8" color="grey" rotation="-30 0 0"> </a-box>
+      
+      <a-cylinder scale="13.5 1 13.5" position="1 8 -105" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Ftile.jpg?1497342914526" ></a-cylinder>
+    
+      <a-box scale=".1 .1 3" position="3 17.3 -24" rotation="20 10 0" color="gray"></a-box>
+      <a-box scale=".1 .1 3" position="4.7 17.8 -24" rotation="20 55 0" color="gray"></a-box>
+      
+      <a-sky src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2Fskystar.jpg?1496661474309"></a-sky>
+      <a-entity position="-3 1 -6" rotation="5 0 0" scale="" visible="">
+        <a-entity text-geometry="value: Welcome to; font: #dawningFont; size: 1"> </a-entity>
+      </a-entity>
+      <a-entity scale="2 2 2" geometry="primitive: dodecahedron" position="10 9 15" material=" color:red; metalness:2; roughness: 0.1;" rotation="" visible="">
+        <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+      </a-entity>
+            <a-entity geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0" material="src: https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4;" position="" scale="" visible=""></a-entity>
+    <a-entity geometry="primitive: sphere" position="11.3 4 -11.1" scale="2 2 2" material= "src: https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2F4_zps447545b3.jpg?1496319518106; roughness: 1.1"
+      event-set__5="_event: mousedown; scale: 2 2 2"
+  event-set__6="_event: mouseup; scale: 2.5 2.5 2.5"
+  event-set__7="_event: mouseenter; scale: 2.5 2.5 2.5"
+    event-set__8="_event: mouseleave; scale: 2 2 2">
+      <a-animation easing="linear" attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite"></a-animation>
+</a-entity>
+      <a-entity position="2.5 1 -3" rotation="5 0 0" scale="" visible="">
+        <a-entity text="font: dejavu; value: My Personal Presentation; width:11"></a-entity>
+      </a-entity> 
+      <a-entity position="1 0.5 -3" rotation="5 0 0" scale="" visible="">
+        <a-entity text="font: monoid; value: Feel free to visit my planets; width:5"></a-entity>
+      </a-entity>
+      <a-entity position="-55 80 -200" rotation="0 30 0" scale="6 6 6" visible="">
+        <a-entity text="font: exo2bold; value:My Education; width:11"></a-entity> 
+      </a-entity>
+      <a-entity position="-75 78 -197" rotation="0 30 0" scale="5 5 5" visible="">
+        <a-entity text="font: dejavu; value: MSc Design and Innovation (DTU)         BS Industrial Design (UDEM); width:8"></a-entity> 
+      </a-entity>
+      <a-entity position="17 18 -24" rotation="0 0 0" scale="" visible="">
+        <a-entity text="font: exo2bold; value: Professional Experience; width:21"></a-entity> 
+      </a-entity>
+      <a-entity position="10 16 -105" rotation="0 -20 0" scale="2 2 2" visible="">
+        <a-entity text="font: dejavu; value: VR Video Producer
+                        at Abzolute Zero VR; width:8; color:black"></a-entity>
+      </a-entity>
+      <a-text position="1 16.2 -105" scale="5 5 5" value="Current Position" color="#070524" rotation="0 -20 0"></a-text>
+      <a-box id="poster" position="-1.5 13 -102" rotation="0 30 0" scale="3 4 .03" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2FLlegandoacasa.jpg?1496391682768" shader="flat"
+             visible="true"></a-box>
+      <a-box id="posterb" position="-4.5 13 -100" rotation="0 30 0" scale="3 4 .03" src="https://cdn.glitch.com/9104f444-7fc6-4aa8-8e34-d92bfde69c9b%2FScreen%20Shot%202017-05-09%20at%2011.05.22.png?1496394814942" shader="flat"
+      visible="true">
+      </a-box>
+      
+      <a-entity class="link" position="-11 17.5 -103" rotation="0 30 0" scale="1.5 1.5 .1"
+  text-geometry="value: Art Direction Experience; height: 1; width: 1"
+  material="shader: flat; color: #070524; side:double" >
+      </a-entity>
+      <a-entity class="link" position="-6.1 16 -102" rotation="0 30 0" scale=".5 .5 .1"
+  text-geometry="value: (On these two films); height: 1; width: 1"
+  material="shader: flat; color: #070524; side:double" >
+      </a-entity>
+      <a-camera id="camera" position="">
+    <a-cursor id="cursor" color="#ffffff">
+      <a-animation begin="click" easing="ease-in" attribute="scale"
+                   fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+      <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+                   from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+    </a-cursor>
+  </a-camera>
+      
+      
+      
+    </a-scene>
+  </body>
+</html>
